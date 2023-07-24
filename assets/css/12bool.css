@@ -8,7 +8,6 @@
 
 .container {
     margin: 0 auto;
-    /* max-width: 1200px; */
     width: 90%;
 }
 
@@ -18,13 +17,56 @@
     flex-wrap: wrap;
 }
 
+/* #endregion GLOBAL RULES */
+
+/* #region DEBUG RULES */
+
 .debug [class^='col'] {
-    height: 50px;
+    min-height: 50px;
     border: 1px dashed;
     background-color: rgba(220, 20, 60, 0.5);
 }
 
-/* #endregion GLOBAL RULES */
+@media screen and (min-width: 576px) {
+    body.debug {
+        background-color: red;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    body.debug {
+        background-color: green;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    body.debug {
+        background-color: yellow;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    body.debug {
+        background-color: blue;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    body.debug {
+        background-color: orange;
+    }
+
+}
+
+/* #endregion DEBUG RULES */
 
 /* #region COLUMNS */
 
