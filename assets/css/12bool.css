@@ -97,6 +97,34 @@
     object-fit: contain;
 }
 
+/* #region MARGINS */
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.m1 {
+    margin: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+/* #endregion MARGINS */
+
 /* #endregion UTILITIES */
 
 /* #region COLUMNS */

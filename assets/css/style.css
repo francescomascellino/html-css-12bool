@@ -1,3 +1,14 @@
 .container {
     width: 80%;
 }
+
+[class^="col"] {
+    background-color: rgb(0, 108, 250);
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+.green {
+    background-color: rgb(0, 225, 101);
+}
