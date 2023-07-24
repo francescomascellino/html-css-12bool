@@ -68,6 +68,37 @@
 
 /* #endregion DEBUG RULES */
 
+/* #region UTILITIES */
+
+.d-flex {
+    display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.just-cent {
+    justify-content: center;
+}
+
+.align-cent {
+    align-items: center;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* #endregion UTILITIES */
+
 /* #region COLUMNS */
 
 [class^='col'] {
