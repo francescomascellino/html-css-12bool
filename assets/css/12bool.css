@@ -1,8 +1,150 @@
+/* #region GLOBAL RULES */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.row {
+    margin: 0 -1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^='col'] {
+    padding: 1rem;
+}
+
+[class*='col-'] {
+    flex: 0 0 auto;
+}
+
+.debug [class^='col'] {
+    height: 50px;
+    border: 1px dashed;
+    background-color: rgba(220, 20, 60, 0.5);
+}
+
+/* #endregion GLOBAL RULES */
+
+/* #region COLUMNS */
+
+/* AUTO SIZING COLUMN */
+.col {
+    flex-grow: 1;
+    /* flex-basis: 0; */
+    max-width: 100%;
+}
+
+.col-1 {
+    width: calc((100% / 12) * 1);
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+    width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+    width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+    width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+    width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* #endregion COLUMNS */
+
+/* #region OFFSETS */
+
+.offset-col-1 {
+    margin-left: calc((100% / 12) * 1);
+}
+
+.offset-col-2 {
+    margin-left: calc((100% / 12) * 2);
+}
+
+.offset-col-3 {
+    margin-left: calc((100% / 12) * 3);
+}
+
+.offset-col-4 {
+    margin-left: calc((100% / 12) * 4);
+}
+
+.offset-col-5 {
+    margin-left: calc((100% / 12) * 5);
+}
+
+.offset-col-6 {
+    margin-left: 50%;
+}
+
+.offset-col-7 {
+    margin-left: calc((100% / 12) * 7);
+}
+
+.offset-col-8 {
+    margin-left: calc((100% / 12) * 8);
+}
+
+.offset-col-9 {
+    margin-left: calc((100% / 12) * 9);
+}
+
+.offset-col-10 {
+    margin-left: calc((100% / 12) * 10);
+}
+
+.offset-col-11 {
+    margin-left: calc((100% / 12) * 11);
+}
+
+.offset-col-12 {
+    margin-left: 100%;
+}
+
+/* #endregion OFFSETS */
+
 
 /* #region SMALL DEVICES */
 
@@ -10,6 +152,11 @@
     * {
         background-color: red;
     }
+
+    .container {
+        /* max-width: 524px; */
+    }
+
 }
 
 /* #endregion SMALL DEVICES */
@@ -19,6 +166,10 @@
 @media screen and (min-width: 768px) {
     * {
         background-color: green;
+    }
+
+    .container {
+        /* max-width: 720px; */
     }
 }
 
@@ -30,6 +181,38 @@
     * {
         background-color: yellow;
     }
+
+    .container {
+        /* max-width: 944px; */
+    }
 }
 
 /* #endregion LARGE DEVICES */
+
+/* #region XL DEVICES */
+
+@media screen and (min-width: 1200px) {
+    * {
+        background-color: blue;
+    }
+
+    .container {
+        /* max-width: 1152px; */
+    }
+}
+
+/* #endregion XL DEVICES */
+
+/* #region XXL DEVICES */
+
+@media screen and (min-width: 1400px) {
+    * {
+        background-color: orange;
+    }
+
+    .container {
+        /* max-width: 1352px; */
+    }
+}
+
+/* #endregion XXL DEVICES */
