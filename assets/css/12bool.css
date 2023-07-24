@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* #region SMALL DEVICES */
+
+@media screen and (min-width: 576px) {
+    * {
+        background-color: red;
+    }
+}
+
+/* #endregion SMALL DEVICES */
+
+/* #region MEDIUM DEVICES */
+
+@media screen and (min-width: 768px) {
+    * {
+        background-color: green;
+    }
+}
+
+/* #endregion MEDIUM DEVICES */
+
+/* #region LARGE DEVICES */
+
+@media screen and (min-width: 992px) {
+    * {
+        background-color: yellow;
+    }
+}
+
+/* #endregion LARGE DEVICES */
