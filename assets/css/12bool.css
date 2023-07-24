@@ -8,7 +8,6 @@
 
 .container {
     margin: 0 auto;
-    width: 90%;
 }
 
 .row {
@@ -571,7 +570,7 @@
     }
 
     .container {
-        width: 524px;
+        max-width: 524px;
     }
 
     /* #region SM COLUMNS */
@@ -683,7 +682,7 @@
 @media screen and (min-width: 768px) {
 
     .container {
-        width: 720px;
+        max-width: 720px;
     }
 
     /* #region MD COLUMNS */
@@ -795,7 +794,7 @@
 @media screen and (min-width: 992px) {
 
     .container {
-        width: 944px;
+        max-width: 944px;
     }
 
     /* #region LG COLUMNS */
@@ -907,7 +906,7 @@
 @media screen and (min-width: 1200px) {
 
     .container {
-        width: 1152px;
+        max-width: 1152px;
     }
 
     /* #region XL COLUMNS */
@@ -1019,7 +1018,7 @@
 @media screen and (min-width: 1400px) {
 
     .container {
-        width: 1200px;
+        max-width: 1200px;
     }
 
     /* #region XXL COLUMNS */
