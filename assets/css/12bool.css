@@ -7,12 +7,13 @@
 }
 
 .container {
-    margin: 0 auto;
     max-width: 360px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
 }
 
 .row {
-    margin: 0 -1rem;
+    margin: 0 -0.5rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -275,6 +276,10 @@
 
 /* #region PADDINGS */
 
+.p-0 {
+    padding: 0;
+}
+
 .p-1 {
     padding: 0.5rem;
 }
@@ -450,7 +455,7 @@
 /* #region COLUMNS */
 
 [class^='col'] {
-    padding: 0.25rem;
+    padding: 0.5rem;
 }
 
 [class*='col-'] {
@@ -566,10 +571,6 @@
 
 @media screen and (min-width: 576px) {
 
-    [class^='col'] {
-        padding: 1rem;
-    }
-
     .container {
         max-width: 524px;
     }
@@ -684,6 +685,14 @@
 
     .container {
         max-width: 720px;
+    }
+
+    .row {
+        margin: 0 -1rem;
+    }
+
+    [class^='col'] {
+        padding: 1rem;
     }
 
     /* #region MD COLUMNS */
